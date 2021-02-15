@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo Da Velha</title>
+</head>
+<body>
+    <div class="container">
+        <div class="game_container">
+            <div class="description"></div>
+            <div class="game"></div>
+            <button class="game_restart" onclick="tic_tac_toe.restart()">Reiniciar</button>
+        </div>
+
+        <div class="rank_container">
+            <div class="rank_description">RANK</div>
+            <div class="rank">
+                <ul class="rank_list">
+                    <li class="rank_list_1"></li>
+                    <li class="rank_list_2"></li>
+                    <li class="rank_winner"></li>
+                </ul>
+
+            <button class="rank_restart" onclick="tic_tac_toe.reset()">Jogar Novamente</button>
+            </div>
+        </div>
+        
+    </div>  
+    
+
+    <script src="./script.js"></script>
+    <script>
+        tic_tac_toe.init(document.querySelector('.game'))
+        tic_tac_toe.draw()
+    </script>
+</body>
+</html>
